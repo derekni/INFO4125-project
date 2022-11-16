@@ -1,23 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter,
-  Route,
-  Link,
-  Routes,
-} from 'react-router-dom';
-import React from 'react';
-import Navbar from './components/Navbar.js';
-import Resources from './pages/Resources.js';
-import Home from './pages/Home.js';
-import Login from './pages/Login.js';
-import Entry from './pages/Entry.js';
-import Signup from './pages/Signup.js';
-import CreateEntry from './pages/CreateEntry';
-import Profile from './pages/Profile';
-
-
+import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import React from "react";
+import Navbar from "./components/Navbar.js";
+import Resources from "./pages/Resources.js";
+import Home from "./pages/Home.js";
+import Login from "./pages/Login.js";
+import Entry from "./pages/Entry.js";
+import Signup from "./pages/Signup.js";
+import CreateEntry from "./pages/CreateEntry";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -37,6 +29,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
