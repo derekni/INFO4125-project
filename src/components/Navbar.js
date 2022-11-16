@@ -20,7 +20,7 @@ const Navbar = ({ loggedIn }) => {
           Resources
         </a>
         {!loggedIn && (
-          <a href="/login" className="Option">
+          <a href="/login" className="Login">
             Login
           </a>
         )}
