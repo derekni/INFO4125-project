@@ -1,21 +1,40 @@
 import React from "react";
+import "./design.css";
 
 const Login = () => (
-  <div>
-    <h1 className="title is-1">Login</h1>
+  <div className="Content">
     <form>
-      <label>
+      <h1 >Login</h1>
+      <label >
         Email:
-        <input type="text" name="email" />
+        <input type="text" name="email" required />
       </label>
-      <label>
+      <label >
         Password:
-        <input type="text" name="password" />
+        <input type="text" name="password" required />
       </label>
-      <input type="submit" value="Submit" />
+
+      <div className="outer">
+        <div >
+          <input type="checkbox" id="Remember Me" name="remember" />
+          <label for="rm" >Remember Me</label>
+        </div>
+        <div >
+          <a className="ForgotPassword" href="/">Forgot Password?</a>
+        </div>
+      </div>
+
+
+      <div className="outer">
+        <button className="LoginButton" type="submit">Login</button>
+        <button className="SignupButton" type="submit">Sign Up</button>
+      </div>
+
+
+
     </form>
 
-    <p> No account? Click <a href="/signup">here</a></p>
+
   </div>
 );
 
