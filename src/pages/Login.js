@@ -27,7 +27,7 @@ const Login = () => (
 
       <div className="outer">
         <button className="LoginButton" type="submit">Login</button>
-        <button className="SignupButton" type="submit">Sign Up</button>
+        <a className="SignupButton" href="\signup">Sign Up</a>
       </div>
 
 
