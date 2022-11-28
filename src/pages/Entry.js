@@ -16,7 +16,7 @@ const Entry = (props) => (
     </div>
 
     <div className="middle">
-      <h1 >Chipotle Burritos</h1>
+      <h1 >Chipotle Burritos (3)</h1>
       <img className="ImageBorder" src="chipotle_large.png" alt="chipotle large" />
       <p>
         This is a burrito containing lettuce, meat (steak), and sour cream.
