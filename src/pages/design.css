@@ -3,6 +3,14 @@
   margin: auto;
 }
 
+.EntryContent {
+  max-width: 100%;
+  min-width: 100%;
+  margin: auto;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
 .outer {
   width: 100%;
   text-align: center;
@@ -10,6 +18,24 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10%;
+}
+
+.left {
+  flex-basis: 25%;
+  padding-left: 5%;
+}
+
+.middle {
+  flex-basis: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.right {
+  flex-basis: 25%;
+  padding-right: 5%;
+  text-align: center;
 }
 
 
@@ -32,7 +58,13 @@ form h1 {
   margin: 30px 0 30px 0;
 }
 
+h3 {
+  margin: 5px 0 5px 0;
+}
 
+h4 {
+  margin: 5px 0 5px 0;
+}
 
 label {
   display: block;
@@ -42,7 +74,7 @@ label {
   text-align: left;
 }
 
-label[for=rm] {
+label[for=remember] {
   display: inline-block;
   height: 15px;
   margin-top: 0;
@@ -52,7 +84,7 @@ label[for=rm] {
 }
 
 input[type=checkbox] {
-  height: 15px;
+  height: 10px;
   vertical-align: middle;
 }
 
@@ -91,7 +123,6 @@ input[type=text] {
   font-family: sans-serif;
   font-size: 20px;
   font-weight: bold;
-
   padding-left: 0.75em;
   padding-right: 0.75em;
   padding-top: 0.25em;
@@ -126,4 +157,131 @@ input[type=text] {
   align-items: center;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   width: 40%;
+}
+
+.KudosButton {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  text-decoration: none;
+  color: white;
+  background-color: #ACC659;
+  border: none;
+  border-radius: 15px;
+  border-color: white;
+  display: block;
+  align-items: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 10px auto;
+}
+
+.ClaimButton {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  text-decoration: none;
+  color: white;
+  background-color: #ACC659;
+  border: none;
+  border-radius: 15px;
+  border-color: white;
+  display: block;
+  align-items: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  margin: 10px auto;
+}
+
+.ProfileBox:hover {
+  background-color: #f1f1f1;
+}
+
+.ProfileBox {
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.ImageBorder {
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: #86B495;
+  border-width: 15px;
+  padding: 0.50em;
+  max-width: 100%;
+}
+
+.OtherItem {
+  margin: 5px 10px 30px 20px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  border: 3px solid #f1f1f1;
+  border-radius: 15px;
+}
+
+.OtherItem:hover {
+  background-color: #f1f1f1;
+}
+
+.OtherItem p {
+  font-size: 10px;
+}
+
+.FoodDesc {
+  max-width: 150px;
+  text-align: left;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+.middle h1 {
+  text-align: center;
+}
+
+.checkbox-grid {
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.checkbox-grid li {
+  display: block;
+  float: left;
+  width: 33%;
+  text-align: left;
+}
+
+.checkbox-grid h5 {
+  margin-bottom: 5px;
+}
+
+.clr {
+  clear: both;
+  font-size: 0;
+}
+
+.allergy {
+  display: inline-block;
+  height: 20px;
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5D626A;
+}
+
+.className {
+  text-align: center;
 }

@@ -16,8 +16,8 @@ const Login = () => (
 
       <div className="outer">
         <div >
-          <input type="checkbox" id="Remember Me" name="remember" />
-          <label for="rm" >Remember Me</label>
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember" >Remember Me</label>
         </div>
         <div >
           <a className="ForgotPassword" href="/">Forgot Password?</a>

@@ -1,4 +1,5 @@
 import React from "react";
+import "./design.css";
 
 const Signup = () => (
   <div className="Content">
