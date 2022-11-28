@@ -22,7 +22,7 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    <div>
+    <div>x
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -32,7 +32,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/entry" element={<Entry />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/post/entry" element={<CreateEntry />} />
+          <Route path="/create" element={<CreateEntry />} />
         </Routes>
         <Footer />
       </BrowserRouter>
