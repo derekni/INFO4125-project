@@ -1,0 +1,13 @@
+.Button {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: darkslategray;
+}
+
+.Container {
+  padding: 0.5em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
