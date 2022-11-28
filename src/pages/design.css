@@ -44,6 +44,7 @@ form {
   border-radius: 15px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 20px;
 }
 
 
@@ -72,6 +73,7 @@ label {
   font-weight: 800;
   color: #5D626A;
   text-align: left;
+  margin-top: 10px;
 }
 
 label[for=remember] {
@@ -81,6 +83,10 @@ label[for=remember] {
   font-size: 12px;
   font-weight: 500;
   color: #5D626A;
+}
+
+input {
+  margin: 15px;
 }
 
 input[type=checkbox] {
