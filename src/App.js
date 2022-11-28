@@ -22,7 +22,7 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    <div>x
+    <div>
       <BrowserRouter>
         <Navbar />
         <Routes>
