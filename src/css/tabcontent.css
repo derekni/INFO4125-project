@@ -1,3 +1,84 @@
+.TabContent {
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: auto;
+}
+
+.TileContent {
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  max-width: 70%;
+  margin: auto;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
 .Entry {
   display: inline-flex;
+  margin: 5px 0 15px 0;
+  text-align: center;
+}
+
+.Desc {
+  text-align: left;
+  margin: 20px 0 30px 0;
+  color: #35373A;
+}
+
+.Text {
+  text-align: left;
+  max-width: 80%;
+  padding-right: 5%;
+}
+
+.Text h3 {
+  text-decoration: underline;
+  color: #35373A;
+}
+
+
+.Text p {
+  color: #5D626A
+}
+
+.Image {
+  max-width: 20%;
+  text-align: center;
+}
+
+.ResourceBox {
+  max-width: 40%;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+  padding: 10px 20px 20px 20px;
+  border-radius: 20px;
+  border-color: #ACC659;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-style: solid none none;
+  border-width: 30px;
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.ArticlesAuthor {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ArticleTitle {
+  text-decoration: underline;
+  line-height: 1.5;
+}
+
+.ArticlesDesc {
+  font-size: 11px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

@@ -9,14 +9,14 @@ import GroceriesTab from "../components/GroceriesTab.js";
 
 function Resources() {
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   return (
     <div className="Resources">
       <h1 > Resources </h1>
 
       <div class="tab">
-        <button class={count === 0 ? "tablinks active" : "tablinks"} onClick={() => setCount(0)} >Events</button>
+        {/* <button class={count === 0 ? "tablinks active" : "tablinks"} onClick={() => setCount(0)} >Events</button> */}
         <button class={count === 1 ? "tablinks active" : "tablinks"} onClick={() => setCount(1)}>Programs</button>
         <button class={count === 2 ? "tablinks active" : "tablinks"} onClick={() => setCount(2)}>Articles</button>
         <button class={count === 3 ? "tablinks active" : "tablinks"} onClick={() => setCount(3)}>Groceries</button>
