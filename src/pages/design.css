@@ -341,12 +341,13 @@ input[type=text] {
   padding: 14px 16px;
   transition: 0.3s;
   width: 40%;
-  background-color: #ACC659;
-  color: white;
-  margin: 0 5px 0 5px
+  background-color: #F5F5F5;
+  color: 35373A;
+  margin: 0 5px 5px 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #75873B;
+  background-color: #dfdfdf;
 }
