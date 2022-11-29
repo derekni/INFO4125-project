@@ -7,7 +7,7 @@ const Entry = (props) => (
   <div className="EntryContent">
 
     <div className="left">
-      <LeftArrow />
+      <a href="/"> <LeftArrow /> </a>
       <div className="OtherItem">
         <img className="ImageBorder" src="chipotle.png" alt="chipotle" />
         <h4> Chipotle Bowls (2)</h4>
