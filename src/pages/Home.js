@@ -1,5 +1,4 @@
 import React from "react";
-import EntryBox from "../components/EntryBox.js";
 import FoodPosting from "../components/FoodPosting.js";
 import PlusButton from "../components/PlusButton.js";
 import SortIcon from "../components/SortIcon.js";
