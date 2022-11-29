@@ -1,38 +1,35 @@
-import React from "react";
+import React, { useState } from 'react';
+import "./design.css";
+import EventsTab from "../components/EventsTab.js";
+import ProgramsTab from "../components/ProgramsTab.js";
+import ArticlesTab from "../components/ArticlesTab.js";
+import GroceriesTab from "../components/GroceriesTab.js";
 
-const Resources = () => (
-  <div>
 
-    <h1 className="title is-1">Resources</h1>
-    <h2> Events</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida,
-      risus at dapibus aliquet, elit quam scelerisque tortor, nec accumsan eros
-      nulla interdum justo. Pellentesque dignissim, sapien et congue rutrum,
-      lorem tortor dapibus turpis, sit amet vestibulum eros mi et odio.
-    </p>
-    <h2> Programs</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida,
-      risus at dapibus aliquet, elit quam scelerisque tortor, nec accumsan eros
-      nulla interdum justo. Pellentesque dignissim, sapien et congue rutrum,
-      lorem tortor dapibus turpis, sit amet vestibulum eros mi et odio.
-    </p>
-    <h2> Articles</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida,
-      risus at dapibus aliquet, elit quam scelerisque tortor, nec accumsan eros
-      nulla interdum justo. Pellentesque dignissim, sapien et congue rutrum,
-      lorem tortor dapibus turpis, sit amet vestibulum eros mi et odio.
-    </p>
-    <h2> Groceries</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida,
-      risus at dapibus aliquet, elit quam scelerisque tortor, nec accumsan eros
-      nulla interdum justo. Pellentesque dignissim, sapien et congue rutrum,
-      lorem tortor dapibus turpis, sit amet vestibulum eros mi et odio.
-    </p>
-  </div>
-);
 
+function Resources() {
+
+  const [count, setCount] = useState(0);
+
+  return (
+    <div className="Resources">
+      <h1 > Resources </h1>
+
+      <div class="tab">
+        <button class={count === 0 ? "tablinks active" : "tablinks"} onClick={() => setCount(0)} >Events</button>
+        <button class={count === 1 ? "tablinks active" : "tablinks"} onClick={() => setCount(1)}>Programs</button>
+        <button class={count === 2 ? "tablinks active" : "tablinks"} onClick={() => setCount(2)}>Articles</button>
+        <button class={count === 3 ? "tablinks active" : "tablinks"} onClick={() => setCount(3)}>Groceries</button>
+      </div>
+
+      <EventsTab currTab={count}> </EventsTab>
+      <ProgramsTab currTab={count}> </ProgramsTab>
+      <ArticlesTab currTab={count}> </ArticlesTab>
+      <GroceriesTab currTab={count}> </GroceriesTab>
+
+
+    </div >
+  );
+
+}
 export default Resources;
