@@ -24,7 +24,7 @@ const Signup = () => (
         <input type="radio" id="Donor" name="usertype" />
         <label for="rm" >Donor</label>
         <input type="radio" id="Reciever" name="usertype" />
-        <label for="rm" >Reciever</label>
+        <label for="rm" >Receiver</label>
         <input type="radio" id="Both" name="usertype" />
         <label for="rm" >Both</label>
       </div>
