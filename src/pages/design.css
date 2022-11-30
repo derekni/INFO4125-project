@@ -224,21 +224,18 @@ input[type=text] {
 .ImageBorder {
   margin-top: 10px;
   border-radius: 15px;
-  background-color: #ACC659;
-  border-width: 15px;
-  padding: 0.50em;
+  border-width: 0;
   max-width: 100%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 .SpacedImageBorder {
   margin-top: 10px;
   border-radius: 15px;
-  background-color: #ACC659;
-  border-width: 15px;
-  padding: 0.50em;
+  border-width: 0;
   max-width: 100%;
   margin-bottom: 30px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .OtherItem {
