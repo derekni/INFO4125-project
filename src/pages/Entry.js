@@ -63,7 +63,7 @@ const Entry = ({ num }) => {
       break;
     case "4":
       middle = (<EntryMiddle
-        name="Moe's Tacos and Nachos"
+        name="Moe's Tacos"
         count="6"
         imageName="moes.jpeg"
         description="Beef and chicken tacos"
@@ -106,32 +106,36 @@ const Entry = ({ num }) => {
             {" "}
             <LeftArrow />{" "}
           </a>
-          <div className="OtherItem">
-            <img className="ImageBorder" src="chipotle.png" alt="chipotle" />
-            <h4> Chipotle Bowls (2)</h4>
-            <div className="FoodDesc">
-              <p>
-                {" "}
-                Fast-food chain offering Mexican fare, including design-your-own
-                burritos, tacos & bowls.{" "}
-              </p>
-              <h5> Location: Gates Hall 114</h5>
-            </div>
-          </div>
 
-          <div className="OtherItem">
-            <img className="ImageBorder" src="chipotle.png" alt="chipotle" />
-            <h4> Chipotle Bowls (2)</h4>
-            <div className="FoodDesc">
-              <p>
-                {" "}
-                Fast-food chain offering Mexican fare, including design-your-own
-                burritos, tacos & bowls.{" "}
-              </p>
-              <h5> Location: Gates Hall 114</h5>
+          <a className="noUnderline" href="\entry3">
+            <div className="OtherItem">
+              <img className="ImageBorder" src="panera.jpeg" alt="panera" />
+              <h4> Panera Chicken Salad Sandwich (2)</h4>
+              <div className="FoodDesc">
+                <p>
+                  {" "}
+                  This is a sandwich containing lettuce, chicken, and mayonnaise.{" "}
+                </p>
+                <h5> Location: Duffield Atrium near workday table</h5>
+              </div>
             </div>
-          </div>
+          </a>
+
+          <a className="noUnderline" href="\entry2">
+            <div className="OtherItem">
+              <img className="ImageBorder" src="japchae.jpeg" alt="japchae" />
+              <h4> Japchae (1)</h4>
+              <div className="FoodDesc">
+                <p>
+                  {" "}
+                  This is japchae (korean glass noodles) with stirfried kimchi from Green Castle.{" "}
+                </p>
+                <h5> Location: Upson MAE Lounge</h5>
+              </div>
+            </div>
+          </a>
         </div>
+
 
         <div className="middle">
           {middle}
@@ -150,7 +154,7 @@ const Entry = ({ num }) => {
       </div>
 
       <ClaimPackage trigger={claiming} cancel={() => setClaiming(false)} />
-    </div>
+    </div >
   );
 };
 

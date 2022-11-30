@@ -93,7 +93,7 @@ const Home = () => (
         style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
       >
         <FoodPosting
-          name="Moe's Tacos and Nachos"
+          name="Moe's Tacos"
           imageName="moes.jpeg"
           date="October 25, 2022"
           time="4:00pm"

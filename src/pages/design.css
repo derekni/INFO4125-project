@@ -351,4 +351,5 @@ input[type=text] {
 
 .noUnderline {
   text-decoration: none;
+  color: black;
 }
