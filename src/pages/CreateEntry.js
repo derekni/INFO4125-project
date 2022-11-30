@@ -46,7 +46,7 @@ const CreateEntry = () => (
         Image Description:
         <input type="text" name="Description" />
       </label>
-      <a className="ClaimButton" href="\entry">SUBMIT</a>
+      <a className="ClaimButton" href="\entry4">SUBMIT</a>
     </form>
 
   </div>

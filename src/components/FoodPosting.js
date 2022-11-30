@@ -1,6 +1,7 @@
 import React from "react";
 
-const FoodPosting = ({ name, date, time, location, numAvailable }) => {
+const FoodPosting = ({ name, imageName, date, time, location, numAvailable }) => {
+
   return (
     <div
       style={{
@@ -14,8 +15,8 @@ const FoodPosting = ({ name, date, time, location, numAvailable }) => {
       }}
     >
       <img
-        src="chipotle_large.png"
-        alt="Chipotle burrito"
+        src={imageName}
+        alt={imageName}
         style={{ height: "auto", width: "200px", borderRadius: "10px" }}
       ></img>
       <div

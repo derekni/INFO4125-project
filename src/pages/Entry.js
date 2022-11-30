@@ -1,10 +1,79 @@
 import React, { useState } from "react";
 import ClaimPackage from "../components/ClaimPackage";
-import "./design.css";
 import LeftArrow from "../components/LeftArrow.js";
+import EntryRight from "../components/EntryRight.js";
+import EntryMiddle from "../components/EntryMiddle.js";
+import "./design.css";
 
-const Entry = (props) => {
+
+const Entry = ({ num }) => {
   const [claiming, setClaiming] = useState(false);
+
+  var middle;
+
+  switch (num) {
+    case "1":
+      middle = (<EntryMiddle
+        name="Chipotle Burritos"
+        count="3"
+        imageName="chipotle_large.png"
+        description="This is a burrito containing lettuce, meat (steak), and sour cream."
+        location="Gates Hall 114"
+        contains="Dairy, eggs, soy, and wheat"
+      />)
+      break;
+    case "2":
+      middle = (<EntryMiddle
+        name="Japchae"
+        count="1"
+        imageName="japchae.jpeg"
+        description="This is japchae (korean glass noodles) with stirfried kimchi from Green Castle."
+        location="Upson MAE Lounge"
+        contains="Eggs, soy, shellfish"
+      />)
+      break;
+    case "3":
+      middle = (<EntryMiddle
+        name="Panera Chicken Salad Sandwich"
+        count="4"
+        imageName="panera.jpeg"
+        description="This is a sandwich containing lettuce, chicken, and mayonnaise."
+        location="Duffield Atrium near workday table"
+        contains="Dairy, eggs, soy, and wheat"
+      />)
+      break;
+    case "4":
+      middle = (<EntryMiddle
+        name="Moe's Tacos and Nachos"
+        count="6"
+        imageName="moes.jpeg"
+        description="Beef and chicken tacos"
+        location="Gates Hall B12"
+        contains="Wheat and eggs"
+      />)
+      break;
+    default:
+      middle = (<EntryMiddle
+        name="Chipotle Burritos"
+        count="3"
+        imageName="chipotle_large.png"
+        description="This is a burrito containing lettuce, meat (steak), and sour cream."
+        location="Gates Hall 114"
+        contains="Dairy, eggs, soy, and wheat"
+      />)
+  }
+
+
+  if (num === "2") {
+
+  }
+
+  var right = (<EntryRight
+    name="Mariana Lowe"
+    imageName="mariana_lowe.jpeg"
+    title="ACSU President"
+    numberHandoffs="25"
+  />);
 
   return (
     <div>
@@ -42,25 +111,7 @@ const Entry = (props) => {
         </div>
 
         <div className="middle">
-          <h1>Chipotle Burritos (3)</h1>
-          <img
-            className="SpacedImageBorder"
-            src="chipotle_large.png"
-            alt="chipotle large"
-          />
-          <p>
-            This is a burrito containing lettuce, meat (steak), and sour cream.
-          </p>
-          <br />
-          <p>
-            <b>Location: </b> Gates Hall 114
-          </p>
-          <br />
-          <p>
-            <b>Contains: </b> Dairy, eggs, soy, and wheat
-          </p>
-          <br />
-          <br />
+          {middle}
           <div className="Claim">
             <p>
               {" "}
@@ -73,20 +124,7 @@ const Entry = (props) => {
         </div>
 
         <div className="right">
-          <div className="ProfileBox">
-            <h2> Distributed by:</h2>
-            <img
-              className="ImageBorder"
-              src="mariana_lowe.jpeg"
-              alt="Mariana Lowe"
-            />
-            <h3> Mariana Lowe</h3>
-            <h4> ACSU President</h4>
-            <p> 25 successful hand-offs!</p>
-            <a className="KudosButton" href="\">
-              Give Kudos!
-            </a>
-          </div>
+          {right}
         </div>
       </div>
 

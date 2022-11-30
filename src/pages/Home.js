@@ -43,17 +43,65 @@ const Home = () => (
         Sort <SortIcon />
       </a>
     </div>
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
-      <FoodPosting
-        name="Chipotle Burrito"
-        date="October 25, 2022"
-        time="6:00pm"
-        location="Gates Hall Room G01"
-        numAvailable="5"
-      />
-    </div>
+    <a className="noUnderline" href="/entry1">
+      <div
+        style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
+        <FoodPosting
+          name="Chipotle Burrito"
+          imageName="chipotle_large.png"
+          date="October 25, 2022"
+          time="6:00pm"
+          location="Gates Hall Room G01"
+          numAvailable="5"
+        />
+      </div>
+    </a>
+
+    <a className="noUnderline" href="/entry2">
+      <div
+        style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
+        <FoodPosting
+          name="Japchae"
+          imageName="japchae.jpeg"
+          date="October 25, 2022"
+          time="6:30pm"
+          location="Upson MAE Lounge"
+          numAvailable="1"
+        />
+      </div>
+    </a>
+
+    <a className="noUnderline" href="/entry3">
+      <div
+        style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
+        <FoodPosting
+          name="Panera Chicken Salad Sandwich"
+          imageName="panera.jpeg"
+          date="October 25, 2022"
+          time="3:00pm"
+          location="Duffield Atrium near workday table"
+          numAvailable="4"
+        />
+      </div>
+    </a>
+
+    <a className="noUnderline" href="/entry4">
+      <div
+        style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
+        <FoodPosting
+          name="Moe's Tacos and Nachos"
+          imageName="moes.jpeg"
+          date="October 25, 2022"
+          time="4:00pm"
+          location="Gates Hall B12"
+          numAvailable="6"
+        />
+      </div>
+    </a>
   </div>
 );
 
