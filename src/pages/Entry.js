@@ -5,7 +5,6 @@ import EntryRight from "../components/EntryRight.js";
 import EntryMiddle from "../components/EntryMiddle.js";
 import "./design.css";
 
-
 const Entry = ({ num }) => {
   const [claiming, setClaiming] = useState(false);
 
@@ -13,14 +12,22 @@ const Entry = ({ num }) => {
   var right;
   switch (num) {
     case "1":
-      middle = (<EntryMiddle
-        name="Chipotle Burritos"
-        count="3"
-        imageName="chipotle_large.png"
-        description="This is a burrito containing lettuce, meat (steak), and sour cream."
-        location="Gates Hall 114"
-        contains="Dairy, eggs, soy, and wheat"
-      />)
+      middle = (
+        <EntryMiddle
+          name="Chipotle Burritos"
+          count="3"
+          imageName="chipotle_large.png"
+          description="This is a burrito containing lettuce, meat (steak), and sour cream."
+          location="Gates Hall 114"
+          contains="Dairy, eggs, soy, and wheat"
+        />
+      );
+      right = (<EntryRight
+        name="Mariana Lowe"
+        imageName="mariana_lowe.jpeg"
+        title="ACSU President"
+        numberHandoffs="25"
+      />);
       break;
     case "2":
       middle = (<EntryMiddle
@@ -139,9 +146,7 @@ const Entry = ({ num }) => {
           </div>
         </div>
 
-        <div className="right">
-          {right}
-        </div>
+        <div className="right">{right}</div>
       </div>
 
       <ClaimPackage trigger={claiming} cancel={() => setClaiming(false)} />

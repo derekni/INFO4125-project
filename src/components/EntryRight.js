@@ -7,8 +7,8 @@ const EntryRight = ({ name, imageName, title, numberHandoffs }) => {
       <h2> Distributed by:</h2>
       <img
         className="ImageBorder"
-        src="mariana_lowe.jpeg"
-        alt="mariana_lowe.jpeg"
+        src={imageName}
+        alt={imageName}
       />
       <h3> {name}</h3>
       <h4> {title}</h4>
