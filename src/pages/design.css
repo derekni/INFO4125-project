@@ -224,7 +224,7 @@ input[type=text] {
 .ImageBorder {
   margin-top: 10px;
   border-radius: 15px;
-  background-color: #86B495;
+  background-color: #ACC659;
   border-width: 15px;
   padding: 0.50em;
   max-width: 100%;
@@ -234,7 +234,7 @@ input[type=text] {
 .SpacedImageBorder {
   margin-top: 10px;
   border-radius: 15px;
-  background-color: #86B495;
+  background-color: #ACC659;
   border-width: 15px;
   padding: 0.50em;
   max-width: 100%;
