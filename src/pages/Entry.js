@@ -10,7 +10,7 @@ const Entry = ({ num }) => {
   const [claiming, setClaiming] = useState(false);
 
   var middle;
-
+  var right;
   switch (num) {
     case "1":
       middle = (<EntryMiddle
@@ -30,7 +30,13 @@ const Entry = ({ num }) => {
         description="This is japchae (korean glass noodles) with stirfried kimchi from Green Castle."
         location="Upson MAE Lounge"
         contains="Eggs, soy, shellfish"
-      />)
+      />);
+      right = (<EntryRight
+        name="Mariana Lowe"
+        imageName="mariana_lowe.jpeg"
+        title="ACSU President"
+        numberHandoffs="25"
+      />);
       break;
     case "3":
       middle = (<EntryMiddle
@@ -40,7 +46,13 @@ const Entry = ({ num }) => {
         description="This is a sandwich containing lettuce, chicken, and mayonnaise."
         location="Duffield Atrium near workday table"
         contains="Dairy, eggs, soy, and wheat"
-      />)
+      />);
+      right = (<EntryRight
+        name="Mariana Lowe"
+        imageName="mariana_lowe.jpeg"
+        title="ACSU President"
+        numberHandoffs="25"
+      />);
       break;
     case "4":
       middle = (<EntryMiddle
@@ -50,7 +62,13 @@ const Entry = ({ num }) => {
         description="Beef and chicken tacos"
         location="Gates Hall B12"
         contains="Wheat and eggs"
-      />)
+      />);
+      right = (<EntryRight
+        name="Chase Padilla"
+        imageName="chase_padilla.png"
+        title="Student"
+        numberHandoffs="0"
+      />);
       break;
     default:
       middle = (<EntryMiddle
@@ -60,20 +78,18 @@ const Entry = ({ num }) => {
         description="This is a burrito containing lettuce, meat (steak), and sour cream."
         location="Gates Hall 114"
         contains="Dairy, eggs, soy, and wheat"
-      />)
+      />);
+      right = (<EntryRight
+        name="Mariana Lowe"
+        imageName="mariana_lowe.jpeg"
+        title="ACSU President"
+        numberHandoffs="25"
+      />);
   }
 
 
-  if (num === "2") {
 
-  }
 
-  var right = (<EntryRight
-    name="Mariana Lowe"
-    imageName="mariana_lowe.jpeg"
-    title="ACSU President"
-    numberHandoffs="25"
-  />);
 
   return (
     <div>
